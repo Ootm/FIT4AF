@@ -1,0 +1,7 @@
+Ordner anlegen
+
+	mkdir ordnername
+
+Datei anlegen
+
+	touch dateiname.(Dateityp)
