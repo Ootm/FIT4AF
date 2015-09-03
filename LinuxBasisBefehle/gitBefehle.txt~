@@ -1,0 +1,14 @@
+GIT Befehle
+
+
+git add . 		 #läd die Änderungen in commit
+
+git commit -am 'Initial'	 #bereitet das Commit vor
+
+git push origin master 	 #läd das Commit auf den Server
+
+git pull origin master   #syncronisiert das Dateisystem mit dem Server (holt Dateien vom Server, wenn vorhanden)
+
+
+
+

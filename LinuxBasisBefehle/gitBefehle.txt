@@ -1,13 +1,25 @@
 GIT Befehle
 
 
-git add . 		 #läd die Änderungen in commit
+lokale Rep anlegen
 
-git commit 'Initial'	 #bereitet das Commit vor
+	mkdir git_repos
+	cd git_repos
+	git init
 
-git push origin master 	 #läd das Commit auf den Server
+config
 
-git pull origin master   #syncronisiert das Dateisystem mit dem Server (holt Dateien vom Server, wenn vorhanden)
+	git config --global user.name "user"
+	git config --global user.email "email"
+	git remote add origin (link)
+
+
+syncro
+
+	git add . 		 	 #läd die Änderungen in commit
+	git commit -am 'Initial'	 #bereitet das Commit vor
+	git push origin master 		 #läd das Commit auf den Server
+	git pull origin master  	 #syncronisiert das Dateisystem mit dem Server (holt Dateien vom Server, wenn vorhanden)
 
 
 
