@@ -1,0 +1,7 @@
+Ruby-Console
+	<irb> auf der Konsole eingeben
+		# es startet eine Ruby-Console, die alle Ruby-Konstrukte kennt
+		und interpretiert kann
+
+	exit
+		#beeenden der Ruby-Console und Rückkehr zur Linux-Bash
