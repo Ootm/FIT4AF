@@ -33,28 +33,42 @@ end
 #f. Durchlaufen Sie das Array und speichern Sie die Quadratzahlen in einem Array 
 #g. ! Durchlaufen Sie das Array und speichern Sie die Quadratzahlen in einem Hash mit der Zahl als Schlüssel 9 
  
-# 10 Zusatz Zahlen im Array und im Hash: 
-# 11 a. Legen Sie ein Array an mit 10 Primzahlen. Die Ausgabe des Arrays erzeugt: 
-# 12 	1 ist einstellig 
-# 13 	3 ist einstellig 
-# 14 	... 
-# 15 	11 ist zweistellig
-# 16   ... 
-# 17 b. Legen Sie zur Übung einen Hash personen an, mit den keys vorname, nachname, stadt und den Werten Theo, Sommer, Lodz. Machen Sie eine Ausgabe, die 'vorname: Theo + neue Zeile' ausgibt 
-# 18 c. Fortsetzung Aufgabe a:  
-# 19 Speichern Sie beim Durchlaufen des Arrays die Werte in einem Hash mit der Bezeichnung prims, sodass die jeweilige Primzahl den Schlüssel bildet und der Wert den Text 'ist einstellig', 'ist zweistellig' 
-# 20 d. Sortieren Sie den Hash, sodass die Ausgabe folgendermaßen möglich wird: 
-# 21 Einstellig: 1,3,5 .. 
-# 22 Zweistellig: 11, 13, .. 
-# 23 e. Fortsetzung Aufgabe b:  
-# 24 Speichern Sie den Hash in dem Array adressen und legen Sie zwei weitere Hashes personen mit den gleichen Keys und anderen Werten an. Durchlaufen Sie das Array, sodass folgende Ausgabe erfolgt. 
-# 25 1.Person: 
-# 26 Name: Theo 
-# 27 Vorname: Sommer 
-# 28 Stadt: Lodz 
-# 29 2. Person: 
-# 30 ...... 
-# 31 
+# 2. Zusatz Zahlen im Array und im Hash: 
+# Legen Sie ein Array an mit 10 Primzahlen. Die Ausgabe des Arrays erzeugt: 
+# 1 ist einstellig 
+# ......
+# 11 ist zweistellig
+
+require 'prime'
+
+Prime.instance.each(30) do |primzahl|
+	if (primzahl.to_s.length == 1)
+		puts "#{primzahl} -- ist einstellig"
+		else
+		puts "#{primzahl} -- ist zweistellig" 
+	end
+end
+
+
+# b. Legen Sie zur Übung einen Hash personen an, mit den keys vorname, nachname, stadt und den Werten Theo, Sommer, Lodz. Machen Sie eine Ausgabe, die 'vorname: Theo + neue Zeile' ausgibt
+
+
+
+
+# c. Fortsetzung Aufgabe a:  
+# Speichern Sie beim Durchlaufen des Arrays die Werte in einem Hash mit der Bezeichnung prims, sodass die jeweilige Primzahl den Schlüssel bildet und der Wert den Text 'ist einstellig', 'ist zweistellig' 
+# d. Sortieren Sie den Hash, sodass die Ausgabe folgendermaßen möglich wird: 
+# Einstellig: 1,3,5 .. 
+# Zweistellig: 11, 13, .. 
+# e. Fortsetzung Aufgabe b:  
+# Speichern Sie den Hash in dem Array adressen und legen Sie zwei weitere Hashes personen mit den gleichen Keys und anderen Werten an. Durchlaufen Sie das Array, sodass folgende Ausgabe erfolgt. 
+# 1.Person: 
+# Name: Theo 
+# Vorname: Sommer 
+# Stadt: Lodz 
+# 2. Person: 
+# ...... 
+
  
 # 32 2. Worte 
 # 33 a. Bilde ein Array mit den Worten: Pflaume, Bauschaum, Auster 

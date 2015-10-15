@@ -21,4 +21,3 @@ end
 puts evens
 puts "------------------------"
 puts odds
-
