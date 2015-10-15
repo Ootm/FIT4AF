@@ -17,9 +17,27 @@ class Movie
 		@title=ptitle.capitalize
 		@rank=prank
 	end
+
+	attr_accessor :title
+	attr_reader :title
+	attr_writer :title
+
+	def title
+		@title
+	end
+
+	def title=(ptitle)
+		@title = ptitle
+	end
+
+	def normalized_rank
+		@rank/100
+	end
+
 	def thumbs_up
 		@rank=@rank+10
 	end
+
 	def thumbs_down
 		@rank=@rank-10
 	end
@@ -33,3 +51,13 @@ puts movie1
 
 movie1.thumbs_up
 puts "Neuer Wert: #{movie1}"
+
+movie1=Movie.new("batman", 40)
+movie2=Movie.new("spiderman", 50)
+movie3=Movie.new("Spiderman", 50)
+movies=[movie1, movie2, movie3]
+
+movies.each do |movie|
+	puts movie
+end
+
