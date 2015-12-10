@@ -1,0 +1,12 @@
+Anlegen eines Projektes
+	rails new <neuer_projektname>
+
+Starten eines Servers
+	rails s (im Projektverzeichnis!)
+
+	STRG+c beeendet den Server
+
+Starten einer RailsConsole:
+	rails c
+
+	exit in der Konsole schließt diese

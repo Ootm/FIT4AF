@@ -1,0 +1,25 @@
+<h1>Events</h1>
+<p><%= pluralize(@events.size, "Event ist", "Events sind") %> vorhanden</p>
+
+
+<table border=1>
+	<tr>
+		<th>Name</th>
+		<th>Location</th>
+		<th>Price</th>
+		<th>Start</th>
+		<th>Discription</th>
+	</tr>
+
+
+
+<% @events.each do |event| %>
+	<tr>
+		<td><%= event.name %></td>
+		<td><%= event.location %></td>
+		<td><%= format_price(event) %></td>
+		<td><%= event.start_at %></td>
+		<td><%= event.description %></td>
+	</tr>
+<%end%>
+</table>

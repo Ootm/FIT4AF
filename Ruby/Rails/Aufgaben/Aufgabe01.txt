@@ -1,0 +1,9 @@
+1. Erstellen Sie eine Applikation <flix>
+2. Starten Sie die App
+3. erstellen Sie einen Controller mit der Bezeichnung movies
+4. Legen Sie eine route zur index-action des Controllers an
+5. Erstellen  Sie einen Index Action
+ MOVIES 
+ 	- Iron Man
+ 	- Superman
+ 	- Spider-Man
