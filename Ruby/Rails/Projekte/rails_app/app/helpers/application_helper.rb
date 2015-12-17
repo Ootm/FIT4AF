@@ -6,7 +6,9 @@ module ApplicationHelper
 			number_to_currency(event.price, unit: " € ")
 
 		else
+
 			content_tag(:strong, "FREE")
+			
 		end
 
 	end

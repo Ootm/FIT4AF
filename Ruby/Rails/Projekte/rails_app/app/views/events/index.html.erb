@@ -9,6 +9,7 @@
 		<th>Price</th>
 		<th>Start</th>
 		<th>Discription</th>
+		<th>Link</th>
 	</tr>
 
 
@@ -20,6 +21,7 @@
 		<td><%= format_price(event) %></td>
 		<td><%= event.start_at %></td>
 		<td><%= event.description %></td>
+		<td><%= link_to "Show", event_path(event.id) %></td>
 	</tr>
 <%end%>
 </table>
